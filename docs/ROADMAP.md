@@ -39,12 +39,21 @@ Two honesty notes surfaced in the UI rather than papered over:
   Worshipful) do not tally as printed in the book. The picker shows the
   discrepancy rather than hiding it.
 
-## Stage 4 — Wealth: income & expenditure
+## Stage 4 — Wealth: income & expenditure ✅
 
-*Covenants* ch. 5. Income sources, covenfolk categories, yearly expenditure
-categories, cost savings. Produces a yearly balance sheet — the most
-calculation-heavy part of the book, so it needs Stage 1's data model settled
-first.
+*Covenants* ch. 5, as a yearly balance sheet: income sources by category,
+inhabitants by covenfolk category (points differ by covenant season),
+laboratories by Upkeep and use, and the expenditure categories that follow
+from them. Fortifications Boons chosen in Stage 1 feed the Buildings line.
+
+The arithmetic lives in `app/src/lib/wealth.ts` as pure functions, unit
+tested against the book's own worked examples (`npm test`), including the
+Upkeep +15 → 1200 points example and the stated identity that Buildings +
+Consumables + Provisions + Wages comes to exactly 1 pound per point of
+inhabitants.
+
+Still to do here: cost saving from craftsmen, which is per-craft with a
+limit per expenditure category. Laborers are done.
 
 ## Stage 5 — Library
 

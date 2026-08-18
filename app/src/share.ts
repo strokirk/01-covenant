@@ -1,4 +1,5 @@
 import { optionsById } from './data.ts'
+import { sanitizeWealth } from './lib/wealth.ts'
 import type { Covenant } from './types.ts'
 
 /**
@@ -31,6 +32,7 @@ export function sanitize(input: Partial<Covenant> | null | undefined): Covenant 
         return clamped > 0 ? [[id, clamped] as const] : []
       }),
     ),
+    wealth: sanitizeWealth(input?.wealth),
   }
 }
 

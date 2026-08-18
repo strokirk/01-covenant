@@ -1,0 +1,197 @@
+.wealth {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.wealth-section {
+  padding: 1rem 1.1rem;
+  background: var(--parchment-raised);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+}
+
+.wealth-section h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.15rem;
+}
+
+.wealth-note {
+  margin: 0.5rem 0 0.75rem;
+  color: var(--ink-soft);
+  font-size: 0.86rem;
+}
+
+/* --- repeated rows (income sources, laboratories) --- */
+
+.wealth-rows {
+  list-style: none;
+  margin: 0 0 0.6rem;
+  padding: 0;
+  display: grid;
+  gap: 0.4rem;
+}
+
+.wealth-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.wealth-row-name {
+  flex: 1 1 10rem;
+  min-width: 0;
+}
+
+.wealth-row select {
+  flex: 0 1 auto;
+  max-width: 100%;
+}
+
+.wealth-upkeep {
+  width: 4.5rem;
+}
+
+.wealth-inline {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+}
+
+.wealth-remove {
+  color: var(--ink-soft);
+  font-size: 1.1rem;
+  line-height: 1;
+  padding: 0 0.25rem;
+}
+
+.wealth-remove:hover {
+  color: var(--hook);
+}
+
+/* --- number fields --- */
+
+.wealth-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr));
+  gap: 0.6rem;
+}
+
+.wealth-field {
+  display: grid;
+  gap: 0.2rem;
+}
+
+.wealth-field-label {
+  font-size: 0.86rem;
+}
+
+.wealth-field-hint {
+  display: block;
+  color: var(--ink-soft);
+  font-size: 0.75rem;
+}
+
+.wealth-seasons {
+  display: flex;
+  gap: 0.3rem;
+  margin-bottom: 0.8rem;
+}
+
+/* --- figure summaries --- */
+
+.wealth-figures {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  margin: 0.9rem 0 0;
+  padding-top: 0.7rem;
+  border-top: 1px solid var(--rule);
+}
+
+.wealth-figures div {
+  display: flex;
+  align-items: baseline;
+  gap: 0.4rem;
+}
+
+.wealth-figures dt {
+  color: var(--ink-soft);
+  font-size: 0.85rem;
+}
+
+.wealth-figures dd {
+  margin: 0;
+  font-weight: 600;
+}
+
+.wealth-figures .is-total dd {
+  font-size: 1.15rem;
+}
+
+.wealth-figures .is-short dd {
+  color: var(--hook);
+}
+
+/* --- balance table --- */
+
+.wealth-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.wealth-table th,
+.wealth-table td {
+  padding: 0.35rem 0.5rem;
+  text-align: left;
+  border-bottom: 1px solid var(--rule);
+}
+
+.wealth-table thead th {
+  color: var(--ink-soft);
+  font-size: 0.78rem;
+  font-family: var(--font-ui);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.wealth-amount {
+  text-align: right;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+.wealth-rule {
+  color: var(--ink-soft);
+  font-size: 0.82rem;
+}
+
+.wealth-table .is-saving td,
+.wealth-table .is-saving th {
+  color: var(--boon);
+}
+
+.wealth-table tfoot th,
+.wealth-table tfoot td {
+  border-top: 1px solid var(--rule);
+  border-bottom: none;
+  font-weight: 600;
+}
+
+.wealth-table .is-net th,
+.wealth-table .is-net .wealth-amount {
+  font-size: 1.05rem;
+  color: var(--boon);
+}
+
+.wealth-table .is-net.is-deficit th,
+.wealth-table .is-net.is-deficit .wealth-amount {
+  color: var(--hook);
+}
+
+.wealth-table .is-net .wealth-rule {
+  font-weight: 400;
+}

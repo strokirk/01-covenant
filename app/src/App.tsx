@@ -5,6 +5,7 @@ import { CovenantActions } from './components/CovenantActions.tsx'
 import { OptionCard } from './components/OptionCard.tsx'
 import { SelectionSummary } from './components/SelectionSummary.tsx'
 import { SituationPicker } from './components/SituationPicker.tsx'
+import { WealthPanel } from './components/WealthPanel.tsx'
 import { Button } from './components/ui/Button.tsx'
 import { categories, compareOptions, options } from './data.ts'
 import { covenant, setCovenant } from './store.ts'
@@ -19,7 +20,10 @@ const kindFilters: { id: KindFilter; label: string }[] = [
   { id: 'free', label: 'Free Choices' },
 ]
 
+type View = 'boons' | 'wealth'
+
 function App() {
+  const [view, setView] = createSignal<View>('boons')
   const [category, setCategory] = createSignal<CategoryId>('site')
   const [kind, setKind] = createSignal<KindFilter>('all')
   const [search, setSearch] = createSignal('')
@@ -45,7 +49,7 @@ function App() {
       <header class="masthead">
         <div class="masthead-title">
           <h1>Covenant Builder</h1>
-          <p>Boons &amp; Hooks for Ars Magica 5th Edition</p>
+          <p>Ars Magica 5th Edition</p>
         </div>
         <div class="masthead-controls">
           <input
@@ -60,12 +64,26 @@ function App() {
         </div>
       </header>
 
-      <BalanceBar />
-      <SituationPicker />
+      <nav class="views" aria-label="Sections">
+        <Button variant="bare" class="view-tab" active={view() === 'boons'} onClick={() => setView('boons')}>
+          Boons &amp; Hooks
+        </Button>
+        <Button variant="bare" class="view-tab" active={view() === 'wealth'} onClick={() => setView('wealth')}>
+          Wealth
+        </Button>
+      </nav>
 
-      <div class="layout">
-        <main class="picker">
-          <div class="toolbar">
+      <Show when={view() === 'wealth'}>
+        <WealthPanel />
+      </Show>
+
+      <Show when={view() === 'boons'}>
+        <BalanceBar />
+        <SituationPicker />
+
+        <div class="layout">
+          <main class="picker">
+            <div class="toolbar">
             <input
               class="field search"
               type="search"
@@ -117,11 +135,12 @@ function App() {
             <ul class="option-list">
               <For each={visible()}>{(option) => <OptionCard option={option} />}</For>
             </ul>
-          </Show>
-        </main>
+            </Show>
+          </main>
 
-        <SelectionSummary />
-      </div>
+          <SelectionSummary />
+        </div>
+      </Show>
 
       <footer class="colophon">
         <p>

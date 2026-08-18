@@ -1,3 +1,5 @@
+import type { Wealth } from './lib/wealth.ts'
+
 /** Boon and Hook magnitudes. Free Choices cost nothing and never unbalance. */
 export type Magnitude = 'major' | 'minor' | 'free'
 
@@ -35,6 +37,7 @@ export interface BoonHook {
 export interface Covenant {
   name: string
   selections: Record<string, number>
+  wealth: Wealth
 }
 
 /** One line of a Covenant Situation's package, as the book writes it. */
