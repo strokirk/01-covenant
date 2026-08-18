@@ -1,0 +1,63 @@
+.construction {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.construction-empty {
+  margin: 0 0 0.8rem;
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+}
+
+/* The project table has many columns; let it scroll rather than the page. */
+.construction-scroll {
+  overflow-x: auto;
+  margin-bottom: 0.8rem;
+}
+
+.construction-table {
+  min-width: 46rem;
+}
+
+.construction-table th[scope='row'] {
+  font-weight: 400;
+}
+
+.construction-table select,
+.construction-table input {
+  font-size: 0.85rem;
+  padding: 0.25rem 0.35rem;
+}
+
+.construction-name {
+  width: 100%;
+  min-width: 8rem;
+}
+
+.construction-tiny {
+  width: 4rem;
+}
+
+.construction-inline {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  margin-top: 0.25rem;
+  color: var(--ink-soft);
+  font-size: 0.78rem;
+}
+
+.construction-add {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+}
+
+.construction-price {
+  color: var(--ink-soft);
+  font-size: 0.75rem;
+}
+
+.construction-land {
+  max-width: 16rem;
+}

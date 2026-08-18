@@ -83,3 +83,21 @@ Printable / exportable covenant sheet pulling every stage together.
   attribution to Atlas Games (see `reference/README.md`).
 - Rule data is extracted from the source books by scripts in `scripts/`
   rather than hand-typed, so it stays auditable.
+
+## Stage 5 — Buildings & expansion ✅
+
+*Covenants* ch. 5, Sundry Expenses → Property, plus the Price List. One-off
+costs, kept separate from the yearly upkeep of Stage 4:
+
+- The building catalogue (House 1 lb through Castle 1000 lb), with the
+  quality and size multipliers — two independent axes that multiply
+  together, so Huge and Excellent is ×25.
+- Build time of one year per floor, halved by paying 50% more.
+- Covenfolk quarters priced at a pound per point of inhabitants housed.
+- Land at 10 lb per virgate, with the book's guide of one virgate per
+  farmhand laborer.
+- Laboratory outfitting at a pound per two points, following the
+  laboratories already entered on the Wealth page.
+
+Not yet covered from this material: hired labor rates, the animals /
+travel / precious materials price lists, and the Pound of Enumerus.

@@ -10,6 +10,8 @@
  * Hermetic laboratory.
  */
 
+import { sanitizeProjects } from './construction.ts'
+import type { BuildingProject } from './construction.ts'
 import type { BoonHook } from '../types.ts'
 
 /** Inhabitant point costs differ between a young covenant and an established one. */
@@ -50,6 +52,10 @@ export interface Wealth {
   inhabitants: Record<InhabitantKind, number>
   incomeSources: IncomeSource[]
   laboratories: Laboratory[]
+  /** One-off construction plans; see lib/construction.ts. */
+  projects: BuildingProject[]
+  /** Virgates of arable land the covenant means to buy. */
+  virgates: number
   /** Total points of weapons and armor across the covenant. */
   weaponPoints: number
   /** Scribes, bookbinders and illuminators; each costs writing materials. */
@@ -379,6 +385,8 @@ export function sanitizeWealth(input: unknown): Wealth {
     inhabitants,
     incomeSources,
     laboratories,
+    projects: sanitizeProjects(raw.projects),
+    virgates: safeNumber(raw.virgates),
     weaponPoints: Math.floor(safeNumber(raw.weaponPoints)),
     scribes: Math.floor(safeNumber(raw.scribes)),
     soldierPenniesPerDay: safeNumber(raw.soldierPenniesPerDay),
@@ -404,6 +412,8 @@ export function emptyWealth(): Wealth {
     },
     incomeSources: [{ id: 'base', label: 'Principal source', category: 'typical' }],
     laboratories: [],
+    projects: [],
+    virgates: 0,
     weaponPoints: 0,
     scribes: 0,
     soldierPenniesPerDay: 0,

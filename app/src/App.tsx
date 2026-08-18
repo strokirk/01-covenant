@@ -5,6 +5,7 @@ import { CovenantActions } from './components/CovenantActions.tsx'
 import { OptionCard } from './components/OptionCard.tsx'
 import { SelectionSummary } from './components/SelectionSummary.tsx'
 import { SituationPicker } from './components/SituationPicker.tsx'
+import { ConstructionPanel } from './components/ConstructionPanel.tsx'
 import { WealthPanel } from './components/WealthPanel.tsx'
 import { Button } from './components/ui/Button.tsx'
 import { categories, compareOptions, options } from './data.ts'
@@ -20,7 +21,7 @@ const kindFilters: { id: KindFilter; label: string }[] = [
   { id: 'free', label: 'Free Choices' },
 ]
 
-type View = 'boons' | 'wealth'
+type View = 'boons' | 'wealth' | 'building'
 
 function App() {
   const [view, setView] = createSignal<View>('boons')
@@ -71,10 +72,22 @@ function App() {
         <Button variant="bare" class="view-tab" active={view() === 'wealth'} onClick={() => setView('wealth')}>
           Wealth
         </Button>
+        <Button
+          variant="bare"
+          class="view-tab"
+          active={view() === 'building'}
+          onClick={() => setView('building')}
+        >
+          Building
+        </Button>
       </nav>
 
       <Show when={view() === 'wealth'}>
         <WealthPanel />
+      </Show>
+
+      <Show when={view() === 'building'}>
+        <ConstructionPanel />
       </Show>
 
       <Show when={view() === 'boons'}>
