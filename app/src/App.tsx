@@ -1,6 +1,7 @@
 import { For, Show, createMemo, createSignal } from 'solid-js'
 import './App.css'
 import { BalanceBar } from './components/BalanceBar.tsx'
+import { CovenantActions } from './components/CovenantActions.tsx'
 import { OptionCard } from './components/OptionCard.tsx'
 import { SelectionSummary } from './components/SelectionSummary.tsx'
 import { categories, compareOptions, options } from './data.ts'
@@ -44,14 +45,17 @@ function App() {
           <h1>Covenant Builder</h1>
           <p>Boons &amp; Hooks for Ars Magica 5th Edition</p>
         </div>
-        <input
-          class="covenant-name"
-          type="text"
-          placeholder="Name your covenant…"
-          value={covenant.name}
-          onInput={(event) => setCovenant('name', event.currentTarget.value)}
-          aria-label="Covenant name"
-        />
+        <div class="masthead-controls">
+          <input
+            class="covenant-name"
+            type="text"
+            placeholder="Name your covenant…"
+            value={covenant.name}
+            onInput={(event) => setCovenant('name', event.currentTarget.value)}
+            aria-label="Covenant name"
+          />
+          <CovenantActions />
+        </div>
       </header>
 
       <BalanceBar />

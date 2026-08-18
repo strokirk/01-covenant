@@ -3,7 +3,7 @@
 Features in build order, simplest first. Each stage should be shippable on
 its own — the app stays useful and deployable at the end of every stage.
 
-## Stage 1 — Boons & Hooks picker ✅ data / ⬜ UI
+## Stage 1 — Boons & Hooks picker ✅
 
 The heart of covenant creation (*Covenants* ch. 2). Pick options across the
 six categories; the app tracks the point balance.
@@ -16,10 +16,11 @@ six categories; the app tracks the point balance.
   (e.g. Minor Aura up to 7×).
 - Persistence: localStorage.
 
-## Stage 2 — Covenant identity & saved state
+## Stage 2 — Saved state, export & sharing ✅
 
-Name, description, chosen aura level, season (Spring/Summer/Autumn/Winter).
-Export/import a covenant as JSON; share via URL hash.
+Name the covenant, export/import it as JSON, and share it by link. The
+covenant is encoded into the URL hash, so a shared link reconstructs it
+with no server involved; a link takes priority over locally saved work.
 
 ## Stage 3 — Covenant Situations as presets
 

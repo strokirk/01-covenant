@@ -1,28 +1,23 @@
 import { createEffect, createMemo, createSignal } from 'solid-js'
 import { createStore, produce } from 'solid-js/store'
 import { compareOptions, optionsById } from './data.ts'
+import { covenantFromHash, sanitize } from './share.ts'
 import type { Covenant } from './types.ts'
 
 const STORAGE_KEY = 'covenant-builder:covenant:v1'
 
 function loadCovenant(): Covenant {
-  const empty: Covenant = { name: '', selections: {} }
+  // A shared link wins over saved local work: following one is an explicit
+  // request to look at that covenant.
+  const shared = covenantFromHash()
+  if (shared) return shared
   try {
     const stored = localStorage.getItem(STORAGE_KEY)
-    if (!stored) return empty
-    const parsed = JSON.parse(stored) as Partial<Covenant>
-    return {
-      name: typeof parsed.name === 'string' ? parsed.name : '',
-      // Drop ids that no longer exist, so a data regeneration cannot leave
-      // phantom selections contributing to the balance.
-      selections: Object.fromEntries(
-        Object.entries(parsed.selections ?? {}).filter(
-          ([id, count]) => optionsById.has(id) && typeof count === 'number' && count > 0,
-        ),
-      ),
-    }
+    // sanitize also drops ids that no longer exist, so a data regeneration
+    // cannot leave phantom selections contributing to the balance.
+    return sanitize(stored ? (JSON.parse(stored) as Partial<Covenant>) : null)
   } catch {
-    return empty
+    return sanitize(null)
   }
 }
 
@@ -60,6 +55,16 @@ export function toggle(id: string): void {
 
 export function clearSelections(): void {
   setCovenant(produce((draft) => void (draft.selections = {})))
+}
+
+/** Replaces the whole covenant, e.g. from an imported file. */
+export function replaceCovenant(next: Covenant): void {
+  setCovenant(
+    produce((draft) => {
+      draft.name = next.name
+      draft.selections = { ...next.selections }
+    }),
+  )
 }
 
 function pointsFor(kind: 'boon' | 'hook'): number {

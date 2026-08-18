@@ -26,13 +26,57 @@
   font-size: 0.95rem;
 }
 
+.masthead-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.5rem;
+}
+
 .covenant-name {
-  flex: 1 1 16rem;
-  max-width: 22rem;
+  width: min(22rem, 60vw);
   padding: 0.5rem 0.7rem;
   background: var(--parchment-raised);
   border: 1px solid var(--rule);
   border-radius: var(--radius);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.35rem;
+}
+
+.actions button {
+  padding: 0.3rem 0.6rem;
+  background: transparent;
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+}
+
+.actions button:hover {
+  border-color: var(--accent);
+  color: var(--ink);
+}
+
+.actions-status {
+  font-size: 0.8rem;
+  color: var(--boon);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 /* --- balance bar ---------------------------------------------------- */
