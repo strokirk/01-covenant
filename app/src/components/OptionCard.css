@@ -1,0 +1,101 @@
+.option-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.option {
+  padding: 0.8rem 0.9rem;
+  margin-bottom: 0.5rem;
+  background: var(--parchment-raised);
+  border: 1px solid var(--rule);
+  border-left: 3px solid transparent;
+  border-radius: var(--radius);
+}
+
+.option.is-selected {
+  border-left-color: var(--accent);
+}
+
+.option-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.option-toggle {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: baseline;
+  gap: 0.4rem;
+  min-width: 0;
+}
+
+.option-name {
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.option.is-selected .option-name::before {
+  content: '✓ ';
+  color: var(--accent);
+}
+
+.option-qualifier {
+  color: var(--ink-soft);
+  font-size: 0.85rem;
+}
+
+.option-summary {
+  margin: 0.45rem 0 0;
+  color: var(--ink-soft);
+  font-size: 0.92rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.option-summary.is-hidden {
+  display: none;
+}
+
+.option-detail {
+  margin-top: 0.5rem;
+  font-size: 0.94rem;
+}
+
+.option-detail p {
+  margin: 0 0 0.6rem;
+}
+
+.option-note {
+  color: var(--ink-soft);
+  font-style: italic;
+}
+
+/* --- repeat stepper --- */
+
+.stepper {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.stepper .btn {
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 0;
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  line-height: 1;
+  text-align: center;
+}
+
+.stepper-count {
+  min-width: 1.7rem;
+  text-align: center;
+  font-size: 0.85rem;
+}

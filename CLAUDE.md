@@ -24,6 +24,29 @@ After changing anything under `app/src/`, run:
 cd app && npm run typecheck && npm run build
 ```
 
+There is also an end-to-end smoke test covering the balance arithmetic,
+persistence, sharing and the situation presets. Playwright is not a saved
+dependency (the Pages workflow runs `npm ci`, and pulling browsers there
+would cost minutes per deploy for a check CI does not run):
+
+```sh
+cd app && npm run preview &        # serves /01-covenant/
+npm i -D playwright --no-save
+npm run smoke                      # CHROMIUM_PATH=... to reuse a browser
+```
+
+## Code layout
+
+- `app/src/styles/` — tokens, base, shared controls, page layout. Imported
+  by `index.css`.
+- `app/src/components/` — one `.tsx` and its own `.css` per component.
+- `app/src/components/ui/` — shared primitives (`Button`, `Badge`). Prefer
+  these over restyling a bare `<button>` or `<span>`.
+- `app/src/lib/` — pure helpers.
+- `scripts/` — reference splitting and rule-data extraction. Rule data is
+  derived from the books by script, never typed by hand, so it stays
+  auditable; regenerate rather than editing `app/src/data/*.json`.
+
 ## Orientation
 
 - `README.md` — what this project is and how the repo is laid out.

@@ -1,4 +1,6 @@
 import { Show } from 'solid-js'
+import './BalanceBar.css'
+import { countOf } from '../lib/text.ts'
 import { balance, boonPoints, hookPoints } from '../store.ts'
 
 /** Plain-language reading of the Boon/Hook balance, per "Paying for Choices". */
@@ -7,10 +9,9 @@ function verdict(difference: number): { text: string; state: string } {
     return { text: 'Nothing chosen yet', state: 'empty' }
   }
   if (difference === 0) return { text: 'Balanced', state: 'balanced' }
-  const points = Math.abs(difference)
   const need = difference > 0 ? 'Hook' : 'Boon'
   return {
-    text: `${points} more ${need} point${points === 1 ? '' : 's'} needed`,
+    text: `${countOf(Math.abs(difference), `${need} point`)} needed`,
     state: 'unbalanced',
   }
 }

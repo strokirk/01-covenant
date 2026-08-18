@@ -1,6 +1,8 @@
 import { For, Show } from 'solid-js'
+import './SelectionSummary.css'
 import { magnitudeLabel } from '../data.ts'
 import { clearSelections, selectedOptions, toggle } from '../store.ts'
+import { Button } from './ui/Button.tsx'
 
 export function SelectionSummary() {
   return (
@@ -8,9 +10,9 @@ export function SelectionSummary() {
       <div class="summary-head">
         <h2>Chosen</h2>
         <Show when={selectedOptions().length > 0}>
-          <button type="button" class="link-button" onClick={clearSelections}>
+          <Button variant="link" onClick={clearSelections}>
             Clear all
-          </button>
+          </Button>
         </Show>
       </div>
 
@@ -27,14 +29,14 @@ export function SelectionSummary() {
           <For each={selectedOptions()}>
             {({ option, count }) => (
               <li>
-                <button
-                  type="button"
+                <Button
+                  variant="bare"
                   class="summary-remove"
                   onClick={() => toggle(option.id)}
                   aria-label={`Remove ${option.name}`}
                 >
                   ×
-                </button>
+                </Button>
                 <span class="summary-name">
                   {option.name}
                   <Show when={count > 1}> ×{count}</Show>

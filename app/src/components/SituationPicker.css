@@ -1,0 +1,83 @@
+.situations {
+  margin-bottom: 1.25rem;
+}
+
+.situations-intro {
+  margin: 0.75rem 0 0.5rem;
+  color: var(--ink-soft);
+  font-size: 0.88rem;
+}
+
+.situation-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  gap: 0.4rem;
+}
+
+.situation {
+  padding: 0.55rem 0.7rem;
+  background: var(--parchment-raised);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+}
+
+/* An expanded situation takes the full row so its detail has room. */
+.situation:has(.situation-detail) {
+  grid-column: 1 / -1;
+}
+
+.situation-head {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.situation-name {
+  flex: 1 1 auto;
+  font-size: 0.98rem;
+  font-weight: 600;
+}
+
+.situation-tally {
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  color: var(--ink-soft);
+}
+
+.situation-tally.is-uneven {
+  color: var(--hook);
+}
+
+.situation-detail {
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--rule);
+  font-size: 0.9rem;
+}
+
+.situation-detail p {
+  margin: 0 0 0.5rem;
+}
+
+.situation-warning {
+  color: var(--hook);
+}
+
+.situation-note {
+  color: var(--ink-soft);
+}
+
+.situation-missing {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: var(--ink-soft);
+  font-size: 0.86rem;
+}
+
+.situation-missing-meta {
+  font-family: var(--font-ui);
+  font-size: 0.76rem;
+}

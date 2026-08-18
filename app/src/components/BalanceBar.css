@@ -1,0 +1,53 @@
+.balance {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem 1rem;
+  margin-bottom: 1.25rem;
+  padding: 0.7rem 1rem;
+  background: var(--parchment-raised);
+  border: 1px solid var(--rule);
+  border-top: none;
+  border-radius: 0 0 var(--radius) var(--radius);
+}
+
+.balance-tally {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+}
+
+.balance-figure strong {
+  font-size: 1.3rem;
+}
+
+.balance-versus {
+  color: var(--ink-soft);
+  font-size: 0.85rem;
+}
+
+.balance-verdict {
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+}
+
+.balance[data-state='balanced'] {
+  border-color: var(--boon);
+}
+
+.balance[data-state='balanced'] .balance-verdict {
+  color: var(--boon);
+  font-weight: 600;
+}
+
+.balance[data-state='unbalanced'] .balance-verdict {
+  color: var(--hook);
+}
+
+.balance-check {
+  margin-right: 0.25rem;
+}

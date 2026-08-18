@@ -1,12 +1,10 @@
 import { Show, createSignal } from 'solid-js'
-import { covenant, replaceCovenant } from '../store.ts'
+import './CovenantActions.css'
+import { slugify } from '../lib/text.ts'
 import { sanitize, shareUrl } from '../share.ts'
+import { covenant, replaceCovenant } from '../store.ts'
 import type { Covenant } from '../types.ts'
-
-function fileName(name: string): string {
-  const slug = name.trim().toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '')
-  return `${slug || 'covenant'}.json`
-}
+import { Button } from './ui/Button.tsx'
 
 export function CovenantActions() {
   const [status, setStatus] = createSignal('')
@@ -34,7 +32,7 @@ export function CovenantActions() {
     const url = URL.createObjectURL(blob)
     const link = document.createElement('a')
     link.href = url
-    link.download = fileName(covenant.name)
+    link.download = `${slugify(covenant.name) || 'covenant'}.json`
     link.click()
     URL.revokeObjectURL(url)
     announce('Exported')
@@ -52,15 +50,9 @@ export function CovenantActions() {
 
   return (
     <div class="actions">
-      <button type="button" onClick={copyLink}>
-        Copy share link
-      </button>
-      <button type="button" onClick={exportJson}>
-        Export
-      </button>
-      <button type="button" onClick={() => fileInput.click()}>
-        Import
-      </button>
+      <Button onClick={copyLink}>Copy share link</Button>
+      <Button onClick={exportJson}>Export</Button>
+      <Button onClick={() => fileInput.click()}>Import</Button>
       <input
         ref={fileInput}
         type="file"

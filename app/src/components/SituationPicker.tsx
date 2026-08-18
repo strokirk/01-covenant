@@ -1,7 +1,9 @@
 import { For, Show, createSignal } from 'solid-js'
+import './SituationPicker.css'
 import { situations } from '../data.ts'
 import { applySituation, covenant } from '../store.ts'
 import type { Situation } from '../types.ts'
+import { Button } from './ui/Button.tsx'
 
 function unresolved(situation: Situation) {
   return situation.entries.filter((entry) => !entry.optionId)
@@ -15,20 +17,20 @@ function SituationRow(props: { situation: Situation; onApply: (situation: Situat
   return (
     <li class="situation">
       <div class="situation-head">
-        <button
-          type="button"
+        <Button
+          variant="bare"
           class="situation-name"
           aria-expanded={open()}
           onClick={() => setOpen(!open())}
         >
           {props.situation.name}
-        </button>
+        </Button>
         <span class="situation-tally" classList={{ 'is-uneven': !balanced() }}>
           {props.situation.boonPoints} / {props.situation.hookPoints}
         </span>
-        <button type="button" class="situation-apply" onClick={() => props.onApply(props.situation)}>
+        <Button class="is-small" onClick={() => props.onApply(props.situation)}>
           Use
-        </button>
+        </Button>
       </div>
 
       <Show when={open()}>
@@ -87,9 +89,9 @@ export function SituationPicker() {
 
   return (
     <section class="situations">
-      <button type="button" class="situations-toggle" aria-expanded={open()} onClick={() => setOpen(!open())}>
+      <Button variant="ghost" aria-expanded={open()} onClick={() => setOpen(!open())}>
         {open() ? 'Hide' : 'Start from'} a ready-made covenant situation
-      </button>
+      </Button>
 
       <Show when={open()}>
         <p class="situations-intro">

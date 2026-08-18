@@ -1,0 +1,36 @@
+/* Palette and shared scalars. Light values on :root, dark overrides below. */
+:root {
+  --parchment: #f5efe2;
+  --parchment-raised: #fbf7ee;
+  --ink: #241c14;
+  --ink-soft: #5c4f41;
+  --rule: #d8cbb4;
+  --boon: #2f6b4f;
+  --boon-soft: #e2efe7;
+  --hook: #8c3a2b;
+  --hook-soft: #f6e4df;
+  --free: #4a5875;
+  --free-soft: #e4e8f1;
+  --accent: #6b4a1f;
+
+  --radius: 8px;
+  --font-serif: 'Iowan Old Style', 'Palatino Linotype', Palatino, Georgia, serif;
+  --font-ui: system-ui, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --parchment: #1b1814;
+    --parchment-raised: #262119;
+    --ink: #ece3d3;
+    --ink-soft: #ab9d89;
+    --rule: #3d352a;
+    --boon: #7cc09b;
+    --boon-soft: #23342b;
+    --hook: #e0917f;
+    --hook-soft: #382520;
+    --free: #9fb0d4;
+    --free-soft: #232733;
+    --accent: #d3ab6d;
+  }
+}

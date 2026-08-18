@@ -5,6 +5,7 @@ import { CovenantActions } from './components/CovenantActions.tsx'
 import { OptionCard } from './components/OptionCard.tsx'
 import { SelectionSummary } from './components/SelectionSummary.tsx'
 import { SituationPicker } from './components/SituationPicker.tsx'
+import { Button } from './components/ui/Button.tsx'
 import { categories, compareOptions, options } from './data.ts'
 import { covenant, setCovenant } from './store.ts'
 import type { CategoryId, Kind } from './types.ts'
@@ -48,7 +49,7 @@ function App() {
         </div>
         <div class="masthead-controls">
           <input
-            class="covenant-name"
+            class="field covenant-name"
             type="text"
             placeholder="Name your covenant…"
             value={covenant.name}
@@ -66,7 +67,7 @@ function App() {
         <main class="picker">
           <div class="toolbar">
             <input
-              class="search"
+              class="field search"
               type="search"
               placeholder="Search all options…"
               value={search()}
@@ -76,13 +77,9 @@ function App() {
             <div class="kind-filter" role="group" aria-label="Filter by type">
               <For each={kindFilters}>
                 {(filter) => (
-                  <button
-                    type="button"
-                    classList={{ 'is-active': kind() === filter.id }}
-                    onClick={() => setKind(filter.id)}
-                  >
+                  <Button active={kind() === filter.id} onClick={() => setKind(filter.id)}>
                     {filter.label}
-                  </button>
+                  </Button>
                 )}
               </For>
             </div>
@@ -91,16 +88,15 @@ function App() {
           <nav class="tabs" aria-label="Categories">
             <For each={categories}>
               {(entry) => (
-                <button
-                  type="button"
-                  classList={{ 'is-active': category() === entry.id && !search().trim() }}
+                <Button
+                  active={category() === entry.id && !search().trim()}
                   onClick={() => {
                     setSearch('')
                     setCategory(entry.id)
                   }}
                 >
                   {entry.label}
-                </button>
+                </Button>
               )}
             </For>
           </nav>
@@ -108,9 +104,9 @@ function App() {
           <Show when={search().trim()}>
             <p class="search-note">
               Showing matches across all categories.{' '}
-              <button type="button" class="link-button" onClick={() => setSearch('')}>
+              <Button variant="link" onClick={() => setSearch('')}>
                 Clear search
-              </button>
+              </Button>
             </p>
           </Show>
 

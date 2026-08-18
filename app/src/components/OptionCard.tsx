@@ -1,7 +1,11 @@
 import { For, Show } from 'solid-js'
+import './OptionCard.css'
 import { magnitudeLabel } from '../data.ts'
+import { countOf as formatCount } from '../lib/text.ts'
 import { adjust, countOf, expandedId, setExpandedId, toggle } from '../store.ts'
 import type { BoonHook } from '../types.ts'
+import { Badge } from './ui/Badge.tsx'
+import { Button } from './ui/Button.tsx'
 
 export function OptionCard(props: { option: BoonHook }) {
   const count = () => countOf(props.option.id)
@@ -12,8 +16,8 @@ export function OptionCard(props: { option: BoonHook }) {
   return (
     <li class="option" classList={{ 'is-selected': count() > 0 }}>
       <div class="option-head">
-        <button
-          type="button"
+        <Button
+          variant="bare"
           class="option-toggle"
           aria-pressed={count() > 0}
           onClick={() => toggle(props.option.id)}
@@ -22,44 +26,39 @@ export function OptionCard(props: { option: BoonHook }) {
           <Show when={props.option.qualifier}>
             <span class="option-qualifier">({props.option.qualifier})</span>
           </Show>
-        </button>
+        </Button>
 
-        <span class={`badge badge-${props.option.kind}`}>{magnitudeLabel(props.option)}</span>
+        <Badge tone={props.option.kind}>{magnitudeLabel(props.option)}</Badge>
         <Show when={props.option.points > 0}>
-          <span class="badge badge-points">
-            {props.option.points} pt{props.option.points === 1 ? '' : 's'}
-          </span>
+          <Badge>{formatCount(props.option.points, 'pt')}</Badge>
         </Show>
 
         <Show when={repeatable() && count() > 0}>
           <span class="stepper">
-            <button
-              type="button"
+            <Button
               onClick={() => adjust(props.option.id, -1)}
               aria-label={`Take ${props.option.name} one fewer time`}
             >
               −
-            </button>
+            </Button>
             <span class="stepper-count">×{count()}</span>
-            <button
-              type="button"
+            <Button
               onClick={() => adjust(props.option.id, 1)}
               disabled={count() >= props.option.maxTimes}
               aria-label={`Take ${props.option.name} one more time`}
             >
               +
-            </button>
+            </Button>
           </span>
         </Show>
 
-        <button
-          type="button"
-          class="option-expand"
+        <Button
+          class="is-small"
           aria-expanded={expanded()}
           onClick={() => setExpandedId(expanded() ? null : props.option.id)}
         >
           {expanded() ? 'Less' : 'More'}
-        </button>
+        </Button>
       </div>
 
       <p class="option-summary" classList={{ 'is-hidden': expanded() }}>
@@ -70,7 +69,9 @@ export function OptionCard(props: { option: BoonHook }) {
         <div class="option-detail">
           <For each={paragraphs()}>{(paragraph) => <p>{paragraph}</p>}</For>
           <Show when={repeatable()}>
-            <p class="option-note">May be taken up to {props.option.maxTimes} times.</p>
+            <p class="option-note">
+              May be taken up to {formatCount(props.option.maxTimes, 'time')}.
+            </p>
           </Show>
         </div>
       </Show>
