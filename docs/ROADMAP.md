@@ -73,25 +73,41 @@ costs, kept separate from the yearly upkeep of Stage 4:
 Not yet covered from this material: hired labor rates, the animals /
 travel / precious materials price lists, and the Pound of Enumerus.
 
-## Stage 6 — Library
+## Stage 6 — Growing and declining over time ✅
+
+*Covenants* ch. 5, Income → Improvement, plus the Inflation category. A
+year-by-year outlook: pick an effect from the Income Modification table for
+each year (Slump ×0.5 through Boom ×1.5) and watch income, inflation and
+stores move.
+
+The multipliers compound, because the book says the changes are usually
+permanent — which is what makes its own claim come out right, that five
+years of Expansion turn a Typical source (100 lb) into something like a
+Greater one (248.8 against 250). That is a unit test.
+
+The projection reads the building plan from Stage 5 and reports the first
+year the covenant can afford it, which is what ties the three views
+together.
+
+## Stage 7 — Library
 
 *Covenants* ch. 7. Books as summae/tractatus with Level and Quality, shelf
 listing, totals.
 
-## Stage 7 — Vis sources
+## Stage 8 — Vis sources
 
 *Covenants* ch. 6. Pick or define sources by Art and annual yield.
 
-## Stage 8 — Laboratories & sanctum
+## Stage 9 — Laboratories & sanctum
 
 *Covenants* ch. 9 (large: size, refinement, safety, warping, plus lab
 virtues/flaws) and ch. 8.
 
-## Stage 9 — Governance & charter
+## Stage 10 — Governance & charter
 
 *Covenants* ch. 3. Charter builder from the book's play-aid template.
 
-## Stage 10 — Output
+## Stage 11 — Output
 
 Printable / exportable covenant sheet pulling every stage together.
 

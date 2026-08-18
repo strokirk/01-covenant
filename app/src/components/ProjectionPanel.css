@@ -1,0 +1,35 @@
+.projection-stores {
+  max-width: 14rem;
+  margin-bottom: 0.9rem;
+}
+
+.projection-table {
+  min-width: 42rem;
+}
+
+.projection-table select {
+  font-size: 0.85rem;
+  padding: 0.25rem 0.35rem;
+}
+
+.projection-table .is-deficit {
+  color: var(--hook);
+}
+
+.projection-controls {
+  display: flex;
+  gap: 0.3rem;
+  margin-top: 0.7rem;
+}
+
+.projection-verdict {
+  margin: 0.9rem 0 0;
+  padding-top: 0.7rem;
+  border-top: 1px solid var(--rule);
+  font-size: 0.92rem;
+  color: var(--boon);
+}
+
+.projection-verdict.is-out-of-reach {
+  color: var(--hook);
+}

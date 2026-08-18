@@ -16,6 +16,7 @@ import {
 } from '../lib/wealth.ts'
 import type { InhabitantKind, LabUse, IncomeCategory } from '../lib/wealth.ts'
 import { covenant, setCovenant } from '../store.ts'
+import { ProjectionPanel } from './ProjectionPanel.tsx'
 import { Button } from './ui/Button.tsx'
 
 const inhabitantOrder = Object.keys(inhabitantLabels) as InhabitantKind[]
@@ -389,6 +390,8 @@ export function WealthPanel() {
           </tfoot>
         </table>
       </section>
+
+      <ProjectionPanel />
     </div>
   )
 }

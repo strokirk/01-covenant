@@ -11,6 +11,8 @@
  */
 
 import { sanitizeProjects } from './construction.ts'
+import { defaultModifiers, sanitizeModifiers } from './projection.ts'
+import type { ModifierId } from './projection.ts'
 import type { BuildingProject } from './construction.ts'
 import type { BoonHook } from '../types.ts'
 
@@ -56,6 +58,8 @@ export interface Wealth {
   projects: BuildingProject[]
   /** Virgates of arable land the covenant means to buy. */
   virgates: number
+  /** Year-on-year outlook; see lib/projection.ts. */
+  projection: { modifiers: ModifierId[]; startingStores: number }
   /** Total points of weapons and armor across the covenant. */
   weaponPoints: number
   /** Scribes, bookbinders and illuminators; each costs writing materials. */
@@ -387,6 +391,10 @@ export function sanitizeWealth(input: unknown): Wealth {
     laboratories,
     projects: sanitizeProjects(raw.projects),
     virgates: safeNumber(raw.virgates),
+    projection: {
+      modifiers: sanitizeModifiers(raw.projection?.modifiers),
+      startingStores: safeNumber(raw.projection?.startingStores),
+    },
     weaponPoints: Math.floor(safeNumber(raw.weaponPoints)),
     scribes: Math.floor(safeNumber(raw.scribes)),
     soldierPenniesPerDay: safeNumber(raw.soldierPenniesPerDay),
@@ -414,6 +422,7 @@ export function emptyWealth(): Wealth {
     laboratories: [],
     projects: [],
     virgates: 0,
+    projection: { modifiers: defaultModifiers(5), startingStores: 0 },
     weaponPoints: 0,
     scribes: 0,
     soldierPenniesPerDay: 0,
