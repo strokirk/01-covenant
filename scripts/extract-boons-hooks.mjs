@@ -97,8 +97,38 @@ for (const category of categories) {
   }
 
   for (const [index, line] of lines.entries()) {
-    // Sidebars are blockquoted; they hold advice, not selectable options.
-    if (line.startsWith('>')) continue
+    // Sidebars are blockquoted and usually hold advice, but one defines a
+    // real option: the Castle Major Hook, which the Fortifications lists
+    // otherwise never state. A sidebar heading that names its own cost —
+    // "Castle (Major Hook)" — is the marker for that.
+    if (line.startsWith('>')) {
+      const body = line.replace(/^>\s?/, '')
+      const sidebarHeading = body.match(
+        /^#{1,4}\s+(?<name>.+?)\s+\((?<magnitude>Major|Minor)\s+(?<kind>Boon|Hook)\)\s*$/i,
+      )
+      if (sidebarHeading) {
+        flush()
+        const { name, magnitude, kind } = sidebarHeading.groups
+        current = {
+          name: name.trim(),
+          kind: kind.toLowerCase(),
+          magnitude: magnitude.toLowerCase(),
+          fromSidebar: true,
+          line: index + 1,
+          paragraphs: [[]],
+        }
+        continue
+      }
+      if (current?.fromSidebar) {
+        // Another heading inside the same blockquote ends the definition.
+        if (/^#{1,4}\s/.test(body)) flush()
+        else if (body.trim() === '') current.paragraphs.push([])
+        else current.paragraphs.at(-1).push(body.trim())
+      }
+      continue
+    }
+    // Leaving the blockquote ends a sidebar definition.
+    if (current?.fromSidebar) flush()
 
     const headingMatch = line.match(/^(#{2,4})\s+(.*\S)\s*$/)
     if (headingMatch) {

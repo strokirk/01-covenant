@@ -135,6 +135,123 @@
   margin-right: 0.25rem;
 }
 
+/* --- covenant situations -------------------------------------------- */
+
+.situations {
+  margin-bottom: 1.25rem;
+}
+
+.situations-toggle {
+  padding: 0.4rem 0.75rem;
+  background: transparent;
+  border: 1px dashed var(--rule);
+  border-radius: var(--radius);
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+}
+
+.situations-toggle:hover {
+  border-color: var(--accent);
+  color: var(--ink);
+}
+
+.situations-intro {
+  margin: 0.75rem 0 0.5rem;
+  color: var(--ink-soft);
+  font-size: 0.88rem;
+}
+
+.situation-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  gap: 0.4rem;
+}
+
+.situation {
+  padding: 0.55rem 0.7rem;
+  background: var(--parchment-raised);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+}
+
+.situation:has(.situation-detail) {
+  grid-column: 1 / -1;
+}
+
+.situation-head {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.situation-name {
+  flex: 1 1 auto;
+  padding: 0;
+  background: none;
+  border: none;
+  text-align: left;
+  font-size: 0.98rem;
+  font-weight: 600;
+}
+
+.situation-tally {
+  font-family: system-ui, sans-serif;
+  font-size: 0.75rem;
+  color: var(--ink-soft);
+}
+
+.situation-tally.is-uneven {
+  color: var(--hook);
+}
+
+.situation-apply {
+  padding: 0.15rem 0.55rem;
+  background: transparent;
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+}
+
+.situation-apply:hover {
+  border-color: var(--accent);
+  color: var(--ink);
+}
+
+.situation-detail {
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--rule);
+  font-size: 0.9rem;
+}
+
+.situation-detail p {
+  margin: 0 0 0.5rem;
+}
+
+.situation-warning {
+  color: var(--hook);
+}
+
+.situation-note {
+  color: var(--ink-soft);
+}
+
+.situation-missing {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: var(--ink-soft);
+  font-size: 0.86rem;
+}
+
+.situation-missing-meta {
+  font-family: system-ui, sans-serif;
+  font-size: 0.76rem;
+}
+
 /* --- layout --------------------------------------------------------- */
 
 .layout {

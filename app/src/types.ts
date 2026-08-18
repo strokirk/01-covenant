@@ -36,3 +36,29 @@ export interface Covenant {
   name: string
   selections: Record<string, number>
 }
+
+/** One line of a Covenant Situation's package, as the book writes it. */
+export interface SituationEntry {
+  /** The name as printed, including any specialization after a colon. */
+  name: string
+  specialization?: string
+  magnitude: Magnitude | null
+  kind: Kind
+  count: number
+  /**
+   * The option this line refers to, or null where the book's shorthand is
+   * ambiguous, disagrees with the lists, or names something from another
+   * chapter (the forms of governance live in chapter three).
+   */
+  optionId: string | null
+}
+
+/** A ready-made package of Boons and Hooks from Covenants chapter two. */
+export interface Situation {
+  id: string
+  name: string
+  description: string
+  entries: SituationEntry[]
+  boonPoints: number
+  hookPoints: number
+}

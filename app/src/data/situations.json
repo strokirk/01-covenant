@@ -1,0 +1,1391 @@
+[
+  {
+    "id": "autumn-power",
+    "name": "Autumn Power",
+    "description": "This strong, Autumn covenant is based on the manorial model. The covenant's strength brings problems in the form of rivals, political involvement, and hierarchy.",
+    "entries": [
+      {
+        "name": "Castle",
+        "lookupName": "Castle",
+        "magnitude": "major",
+        "kind": "hook",
+        "count": 1,
+        "optionId": "fortifications--castle--major-hook"
+      },
+      {
+        "name": "Fosterage",
+        "lookupName": "Fosterage",
+        "magnitude": "minor",
+        "kind": "hook",
+        "count": 1,
+        "optionId": "residents--fosterage--minor-hook"
+      },
+      {
+        "name": "Politics",
+        "lookupName": "Politics",
+        "magnitude": "minor",
+        "kind": "hook",
+        "count": 1,
+        "optionId": null
+      },
+      {
+        "name": "Protector",
+        "lookupName": "Protector",
+        "magnitude": "minor",
+        "kind": "hook",
+        "count": 1,
+        "optionId": "surroundings--protector--minor-hook"
+      },
+      {
+        "name": "Rival",
+        "lookupName": "Rival",
+        "magnitude": "major",
+        "kind": "hook",
+        "count": 1,
+        "optionId": "external-relations--rival--major-hook"
+      },
+      {
+        "name": "Rival",
+        "lookupName": "Rival",
+        "magnitude": "minor",
+        "kind": "hook",
+        "count": 1,
+        "optionId": "external-relations--rival--minor-hook"
+      },
+      {
+        "name": "Superiors",
+        "lookupName": "Superiors",
+        "magnitude": "major",
+        "kind": "hook",
+        "count": 1,
+        "optionId": "residents--superiors--major-hook"
+      },
+      {
+        "name": "Faux Feudalism",
+        "lookupName": "Faux Feudalism",
+        "magnitude": "free",
+        "kind": "free",
+        "count": 1,
+        "optionId": null
+      },
+      {
+        "name": "Artillery",
+        "lookupName": "Artillery",
+        "magnitude": "minor",
+        "kind": "boon",
+        "count": 1,
+        "optionId": "fortifications--artillery--minor-boon"
+      },
+      {
+        "name": "Aura",
+        "lookupName": "Aura",
+        "magnitude": "minor",
+        "kind": "boon",
+        "count": 1,
+        "optionId": "site--aura--minor-boon"
+      },
+      {
+        "name": "Curtain Walls and Mural Towers: Hall Keep",
+        "lookupName": "Curtain Walls and Mural Towers",
+        "specialization": "Hall Keep",
+        "magnitude": "major",
+        "kind": "boon",
+        "count": 1,
+        "optionId": "fortifications--curtain-walls-and-mural-towers--major-boon"
+      },
+      {
+        "name": "Edifice",
+        "lookupName": "Edifice",
+        "magnitude": "minor",
+        "kind": "boon",
+        "count": 2,
+        "optionId": "fortifications--edifices--minor-boon"
+      },
+      {
+        "name": "Prestige",
+        "lookupName": "Prestige",
+        "magnitude": "minor",
+        "kind": "boon",
+        "count": 1,
+        "optionId": "external-relations--prestige--minor-boon"
+      },
+      {
+        "name": "Tame Nobleman",
+        "lookupName": "Tame Nobleman",
+        "magnitude": "major",
+        "kind": "boon",
+        "count": 1,
+        "optionId": "residents--tame-nobleman--major-boon"
+      },
+      {
+        "name": "Powerful Ally",
+        "lookupName": "Powerful Ally",
+        "magnitude": "minor",
+        "kind": "boon",
+        "count": 1,
+        "optionId": null
+      },
+      {
+        "name": "Wealth: Agriculture",
+        "lookupName": "Wealth",
+        "specialization": "Agriculture",
+        "magnitude": "minor",
+        "kind": "boon",
+        "count": 1,
+        "optionId": "resources--wealth--minor-boon"
+      },
+      {
+        "name": "Writ of Crenellation",
+        "lookupName": "Writ of Crenellation",
+        "magnitude": "minor",
+        "kind": "boon",
+        "count": 1,
+        "optionId": "fortifications--writ-of-crenellation--minor-boon"
+      }
+    ],
+    "boonPoints": 14,
+    "hookPoints": 13
+  },
+  {
+    "id": "devoted",
+    "name": "Devoted",
+    "description": "This covenant has devoted itself to attempting to reach the Lunar Sphere not, they insist, breaching it. Archimagus Theoderic, who is affable and encouraging, governs this covenant. His mater, the Archimaga Diana, was the last to attempt to reach the Sphere, but she was blasted into tiny fragments of glass during a laboratory accident on this site. Some other covenants, predominantly from Houses Bonisagus and Merinita, give these magi support.",
+    "entries": [
+      {
+        "name": "Ceremonies",
+        "lookupName": "Ceremonies",
+        "magnitude": "major",
+        "kind": "hook",
+        "count": 1,
+        "optionId": "external-relations--ceremonies--major-hook"
+      },
+      {
+        "name": "Magical Disaster",
+        "lookupName": "Magical Disaster",
+        "magnitude": "major",
+        "kind": "hook",
+        "count": 1,
+        "optionId": "site--magical-disaster--major-hook"
+      },
+      {
+        "name": "Flickering Aura",
+        "lookupName": "Flickering Aura",
+        "magnitude": "minor",
+        "kind": "hook",
+        "count": 1,
+        "optionId": "site--flickering-aura--minor-hook"
+      },
+      {
+        "name": "Hermetic Politics",
+        "lookupName": "Hermetic Politics",
+        "magnitude": "minor",
+        "kind": "hook",
+        "count": 1,
+        "optionId": "external-relations--hermetic-politics--minor-hook"
+      },
+      {
+        "name": "Autocracy",
+        "lookupName": "Autocracy",
+        "magnitude": "free",
+        "kind": "free",
+        "count": 1,
+        "optionId": null
+      },
+      {
+        "name": "Island",
+        "lookupName": "Island",
+        "magnitude": "free",
+        "kind": "free",
+        "count": 1,
+        "optionId": "fortifications--island--free-free"
+      },
+      {
+        "name": "Dedicated Covenant",
+        "lookupName": "Dedicated Covenant",
+        "magnitude": "major",
+        "kind": "boon",
+        "count": 1,
+        "optionId": "external-relations--dedicated-covenant--major-boon"
+      },
+      {
+        "name": "Fallen Temple: Diana",
+        "lookupName": "Fallen Temple",
+        "specialization": "Diana",
+        "magnitude": "minor",
+        "kind": "boon",
+        "count": 1,
+        "optionId": null
+      },
+      {
+        "name": "Famous Resident",
+        "lookupName": "Famous Resident",
+        "magnitude": "minor",
+        "kind": "boon",
+        "count": 1,
+        "optionId": "residents--famous-resident--minor-boon"
+      },
+      {
+        "name": "Felicitous Tribunal",
+        "lookupName": "Felicitous Tribunal",
+        "magnitude": "minor",
+        "kind": "boon",
+        "count": 1,
+        "optionId": "external-relations--felicitous-tribunal--minor-boon"
+      },
+      {
+        "name": "Seclusion",
+        "lookupName": "Seclusion",
+        "magnitude": "minor",
+        "kind": "boon",
+        "count": 1,
+        "optionId": "site--seclusion--minor-boon"
+      },
+      {
+        "name": "Wealth: Marble Quarry",
+        "lookupName": "Wealth",
+        "specialization": "Marble Quarry",
+        "magnitude": "minor",
+        "kind": "boon",
+        "count": 1,
+        "optionId": "resources--wealth--minor-boon"
+      }
+    ],
+    "boonPoints": 8,
+    "hookPoints": 8
+  },
+  {
+    "id": "ecclesiastical",
+    "name": "Ecclesiastical",
+    "description": "This covenant, sponsored by House Jerbiton, has close ties to the Church. It has agreed to monitor a site that was once used by diabolists, but this has aroused the ire of the demon whom the diabolists served.",
+    "entries": [
+      {
+        "name": "Church Territory",
+        "lookupName": "Church Territory",
+        "magnitude": "minor",
+        "kind": "hook",
+        "count": 1,
+        "optionId": "external-relations--church-territories--minor-hook"
+      },
+      {
+        "name": "Corrupt Area",
+        "lookupName": "Corrupt Area",
+        "magnitude": "minor",
+        "kind": "hook",
+        "count": 1,
+        "optionId": "site--corrupt-area--minor-hook"
+      },
+      {
+        "name": "Demonic Interest",
+        "lookupName": "Demonic Interest",
+        "magnitude": "major",
+        "kind": "hook",
+        "count": 1,
+        "optionId": "surroundings--demonic-interest--major-hook"
+      },
+      {
+        "name": "Mundane Politics: Church Politics",
+        "lookupName": "Mundane Politics",
+        "specialization": "Church Politics",
+        "magnitude": "major",
+        "kind": "hook",
+        "count": 1,
+        "optionId": "external-relations--mundane-politics--major-hook"
+      },
+      {
+        "name": "Powerful Ally",
+        "lookupName": "Powerful Ally",
+        "magnitude": "major",
+        "kind": "boon",
+        "count": 1,
+        "optionId": "external-relations--powerful-ally--major-boon"
+      },
+      {
+        "name": "School",
+        "lookupName": "School",
+        "magnitude": "major",
+        "kind": "boon",
+        "count": 1,
+        "optionId": null
+      },
+      {
+        "name": "Vivid Environment",
+        "lookupName": "Vivid Environment",
+        "magnitude": "minor",
+        "kind": "boon",
+        "count": 1,
+        "optionId": "site--vivid-environment--minor-boon"
+      },
+      {
+        "name": "Wealth: Bankers to the Local Bishop",
+        "lookupName": "Wealth",
+        "specialization": "Bankers to the Local Bishop",
+        "magnitude": "minor",
+        "kind": "boon",
+        "count": 1,
+        "optionId": "resources--wealth--minor-boon"
+      }
+    ],
+    "boonPoints": 8,
+    "hookPoints": 8
+  },
+  {
+    "id": "expedition",
+    "name": "Expedition",
+    "description": "This covenant has been created to discover the diamond mines of Solomon. Its members endure hardship, but have hopes for fame and fortune. They follow a map that has been used before, by two expeditions which did not return.",
+    "entries": [
+      {
+        "name": "Erratically Mobile",
+        "lookupName": "Erratically Mobile",
+        "magnitude": "minor",
+        "kind": "hook",
+        "count": 1,
+        "optionId": "site--erratically-mobile--minor-hook"
+      },
+      {
+        "name": "Missing Expedition",
+        "lookupName": "Missing Expedition",
+        "magnitude": "minor",
+        "kind": "hook",
+        "count": 2,
+        "optionId": "surroundings--missing-expedition--minor-hook"
+      },
+      {
+        "name": "Powerful Ally",
+        "lookupName": "Powerful Ally",
+        "magnitude": "major",
+        "kind": "boon",
+        "count": 1,
+        "optionId": "external-relations--powerful-ally--major-boon"
+      }
+    ],
+    "boonPoints": 3,
+    "hookPoints": 3
+  },
+  {
+    "id": "hermetic-market",
+    "name": "Hermetic Market",
+    "description": "This covenant lies at the center of Europe, and holds Ceremonies of Welcome each year, which allow apprentices to become magi. Many magi use these gatherings to trade and gossip, and the covenant charges a small fee for setting up a stall. It also controls surrounding businesses that provide food, accommodation, and alcohol. Its servants act as tailors, saddlers, and blacksmiths, to repair the equipment of travelers.\n\nThe covenant's Unnatural Law refers to powerful truth magic that affects the place. Here, broken oaths cause the tongue of liars to bleed, forged items reveal themselves through chance, and light or heavy measures break or refuse to weigh. This effect has Penetration 15, but is believed by many to be higher.",
+    "entries": [
+      {
+        "name": "Ceremonies",
+        "lookupName": "Ceremonies",
+        "magnitude": "major",
+        "kind": "hook",
+        "count": 1,
+        "optionId": "external-relations--ceremonies--major-hook"
+      },
+      {
+        "name": "Hermetic Services",
+        "lookupName": "Hermetic Services",
+        "magnitude": "major",
+        "kind": "hook",
+        "count": 1,
+        "optionId": "external-relations--hermetic-services--major-hook"
+      },
+      {
+        "name": "Castle",
+        "lookupName": "Castle",
+        "magnitude": "major",
+        "kind": "hook",
+        "count": 1,
+        "optionId": "fortifications--castle--major-hook"
+      },
+      {
+        "name": "Curtain Walls and Mural Towers: Courtyard Castle",
+        "lookupName": "Curtain Walls and Mural Towers",
+        "specialization": "Courtyard Castle",
+        "magnitude": "major",
+        "kind": "boon",
+        "count": 1,
+        "optionId": "fortifications--curtain-walls-and-mural-towers--major-boon"
+      },
+      {
+        "name": "Minority",
+        "lookupName": "Minority",
+        "magnitude": "minor",
+        "kind": "boon",
+        "count": 1,
+        "optionId": "surroundings--minority--minor-boon"
+      },
+      {
+        "name": "Road",
+        "lookupName": "Road",
+        "magnitude": "major",
+        "kind": "boon",
+        "count": 1,
+        "optionId": null
+      },
+      {
+        "name": "Outbuildings — Fairground",
+        "lookupName": "Outbuildings — Fairground",
+        "magnitude": "minor",
+        "kind": "boon",
+        "count": 1,
+        "optionId": null
+      },
+      {
+        "name": "Unnatural Law: Truth Magic",
+        "lookupName": "Unnatural Law",
+        "specialization": "Truth Magic",
+        "magnitude": "minor",
+        "kind": "boon",
+        "count": 1,
+        "optionId": "site--unnatural-law--minor-boon"
+      }
+    ],
+    "boonPoints": 9,
+    "hookPoints": 9
+  },
+  {
+    "id": "military-camp",
+    "name": "Military Camp",
+    "description": "This covenant has militarized to fight faeries in its vicinity. Its buildup of force has worried its neighbors, who have seeded it with spies, and one mundane noble has begun to develop a coalition against it.",
+    "entries": [
+      {
+        "name": "Castle",
+        "lookupName": "Castle",
+        "magnitude": "major",
+        "kind": "hook",
+        "count": 1,
+        "optionId": "fortifications--castle--major-hook"
+      },
+      {
+        "name": "Rival: Faeries",
+        "lookupName": "Rival",
+        "specialization": "Faeries",
+        "magnitude": "major",
+        "kind": "hook",
+        "count": 1,
+        "optionId": "external-relations--rival--major-hook"
+      },
+      {
+        "name": "Rival: Nobleman",
+        "lookupName": "Rival",
+        "specialization": "Nobleman",
+        "magnitude": "minor",
+        "kind": "hook",
+        "count": 1,
+        "optionId": "external-relations--rival--minor-hook"
+      },
+      {
+        "name": "Regio",
+        "lookupName": "Regio",
+        "magnitude": "major",
+        "kind": "hook",
+        "count": 1,
+        "optionId": "site--regio--major-hook"
+      },
+      {
+        "name": "Spies",
+        "lookupName": "Spies",
+        "magnitude": "minor",
+        "kind": "hook",
+        "count": 1,
+        "optionId": "residents--spies--minor-hook"
+      },
+      {
+        "name": "Artillery",
+        "lookupName": "Artillery",
+        "magnitude": "minor",
+        "kind": "boon",
+        "count": 1,
+        "optionId": "fortifications--artillery--minor-boon"
+      },
+      {
+        "name": "Local Ally: Moat Monster",
+        "lookupName": "Local Ally",
+        "specialization": "Moat Monster",
+        "magnitude": "minor",
+        "kind": "boon",
+        "count": 1,
+        "optionId": "external-relations--local-ally--minor-boon"
+      },
+      {
+        "name": "Curtain Wall and Mural Towers: Circular Keep",
+        "lookupName": "Curtain Wall and Mural Towers",
+        "specialization": "Circular Keep",
+        "magnitude": "major",
+        "kind": "boon",
+        "count": 1,
+        "optionId": "fortifications--curtain-walls-and-mural-towers--major-boon"
+      },
+      {
+        "name": "Magical Heavy Cavalry",
+        "lookupName": "Magical Heavy Cavalry",
+        "magnitude": "major",
+        "kind": "boon",
+        "count": 2,
+        "optionId": "residents--heavy-cavalry--major-boon"
+      }
+    ],
+    "boonPoints": 11,
+    "hookPoints": 11
+  },
+  {
+    "id": "mundane-lord",
+    "name": "Mundane Lord",
+    "description": "The covenant has become master of a coastal holding. It is closely tied to the mundane nobility and may soon come to the attention of the Quaesitores.",
+    "entries": [
+      {
+        "name": "Castle",
+        "lookupName": "Castle",
+        "magnitude": "major",
+        "kind": "hook",
+        "count": 1,
+        "optionId": "fortifications--castle--major-hook"
+      },
+      {
+        "name": "Road: Coastline on Sea Route",
+        "lookupName": "Road",
+        "specialization": "Coastline on Sea Route",
+        "magnitude": "minor",
+        "kind": "hook",
+        "count": 1,
+        "optionId": "site--road--minor-hook"
+      },
+      {
+        "name": "Mundane Politics",
+        "lookupName": "Mundane Politics",
+        "magnitude": "major",
+        "kind": "hook",
+        "count": 1,
+        "optionId": "external-relations--mundane-politics--major-hook"
+      },
+      {
+        "name": "Rights and Customs",
+        "lookupName": "Rights and Customs",
+        "magnitude": "minor",
+        "kind": "hook",
+        "count": 1,
+        "optionId": "residents--rights-and-customs--minor-hook"
+      },
+      {
+        "name": "Faux Feudalism",
+        "lookupName": "Faux Feudalism",
+        "magnitude": "free",
+        "kind": "free",
+        "count": 1,
+        "optionId": null
+      },
+      {
+        "name": "Local Ally: Selkie King",
+        "lookupName": "Local Ally",
+        "specialization": "Selkie King",
+        "magnitude": "minor",
+        "kind": "boon",
+        "count": 1,
+        "optionId": "external-relations--local-ally--minor-boon"
+      },
+      {
+        "name": "Powerful Ally: Duke",
+        "lookupName": "Powerful Ally",
+        "specialization": "Duke",
+        "magnitude": "major",
+        "kind": "boon",
+        "count": 1,
+        "optionId": "external-relations--powerful-ally--major-boon"
+      },
+      {
+        "name": "Tame Nobleman",
+        "lookupName": "Tame Nobleman",
+        "magnitude": "major",
+        "kind": "boon",
+        "count": 1,
+        "optionId": "residents--tame-nobleman--major-boon"
+      },
+      {
+        "name": "Criminals: Smugglers",
+        "lookupName": "Criminals",
+        "specialization": "Smugglers",
+        "magnitude": "minor",
+        "kind": "boon",
+        "count": 1,
+        "optionId": "residents--criminals--minor-boon"
+      }
+    ],
+    "boonPoints": 8,
+    "hookPoints": 8
+  },
+  {
+    "id": "quaesitorial-agents",
+    "name": "Quaesitorial Agents",
+    "description": "The covenant comprises a Hoplite (see *Houses of Hermes: True Lineages,* page 70) and a team of non-magical agents, sent forth by the Quaesitores to deal with situations that the Order would like maximum capacity to deny. Agents are given enormous sums of money and magical equipment to allow them to complete their tasks. This saga's stories end with decisive, violent confrontations between the player characters and villains. As the plot of each story develops, the player characters destroy expensive equipment and ruin distant, picturesque locations with fulsome application of devastating magic.",
+    "entries": [
+      {
+        "name": "Informants",
+        "lookupName": "Informants",
+        "magnitude": "minor",
+        "kind": "boon",
+        "count": 1,
+        "optionId": "external-relations--informants--minor-boon"
+      },
+      {
+        "name": "Powerful Ally: House Guernicus",
+        "lookupName": "Powerful Ally",
+        "specialization": "House Guernicus",
+        "magnitude": "major",
+        "kind": "boon",
+        "count": 1,
+        "optionId": "external-relations--powerful-ally--major-boon"
+      },
+      {
+        "name": "Wealthy",
+        "lookupName": "Wealthy",
+        "magnitude": "major",
+        "kind": "boon",
+        "count": 1,
+        "optionId": "resources--wealth--major-boon"
+      },
+      {
+        "name": "Beholden: Quaesitores",
+        "lookupName": "Beholden",
+        "specialization": "Quaesitores",
+        "magnitude": "major",
+        "kind": "hook",
+        "count": 1,
+        "optionId": "external-relations--beholden--major-hook"
+      },
+      {
+        "name": "Constantly Mobile",
+        "lookupName": "Constantly Mobile",
+        "magnitude": "major",
+        "kind": "hook",
+        "count": 1,
+        "optionId": "site--constantly-mobile--major-hook"
+      },
+      {
+        "name": "Hangout: Venetian Villa",
+        "lookupName": "Hangout",
+        "specialization": "Venetian Villa",
+        "magnitude": "minor",
+        "kind": "hook",
+        "count": 1,
+        "optionId": "external-relations--hangout--minor-hook"
+      }
+    ],
+    "boonPoints": 7,
+    "hookPoints": 7
+  },
+  {
+    "id": "powerful-location",
+    "name": "Powerful Location",
+    "description": "The covenant is located in a place of great magical power. In many ways this is helpful, but it brings its own problems. The covenfolk, for example, must live within the place's potent aura, so almost all suffer from Warping.",
+    "entries": [
+      {
+        "name": "Monster",
+        "lookupName": "Monster",
+        "magnitude": "minor",
+        "kind": "hook",
+        "count": 2,
+        "optionId": "surroundings--monster--minor-hook"
+      },
+      {
+        "name": "Regio",
+        "lookupName": "Regio",
+        "magnitude": "major",
+        "kind": "hook",
+        "count": 1,
+        "optionId": "site--regio--major-hook"
+      },
+      {
+        "name": "Aura",
+        "lookupName": "Aura",
+        "magnitude": "minor",
+        "kind": "boon",
+        "count": 5,
+        "optionId": "site--aura--minor-boon"
+      }
+    ],
+    "boonPoints": 5,
+    "hookPoints": 5
+  },
+  {
+    "id": "roman-survival",
+    "name": "Roman Survival",
+    "description": "This covenant is a pocket of the Empire that faded from the world before it fell. Its citizens live in a small, self-supporting town ruled from a villa on the highest hill. The magi now live there, with the current ruler as their autocrat. The residents worship the Old Gods, and accept the magi as priests. The Roman character of the area, and its hidden nature, has led to its designation as a place for Hermetic ceremonies.",
+    "entries": [
+      {
+        "name": "Ceremonies",
+        "lookupName": "Ceremonies",
+        "magnitude": "major",
+        "kind": "hook",
+        "count": 1,
+        "optionId": "external-relations--ceremonies--major-hook"
+      },
+      {
+        "name": "Distorted Covenfolk",
+        "lookupName": "Distorted Covenfolk",
+        "magnitude": "minor",
+        "kind": "hook",
+        "count": 1,
+        "optionId": "residents--distorted-covenfolk--minor-hook"
+      },
+      {
+        "name": "Pagans",
+        "lookupName": "Pagans",
+        "magnitude": "major",
+        "kind": "hook",
+        "count": 1,
+        "optionId": "surroundings--pagans--major-hook"
+      },
+      {
+        "name": "Rights and Customs",
+        "lookupName": "Rights and Customs",
+        "magnitude": "minor",
+        "kind": "hook",
+        "count": 1,
+        "optionId": "residents--rights-and-customs--minor-hook"
+      },
+      {
+        "name": "Gerontocracy: Oldest Member of the Wealthiest Family",
+        "lookupName": "Gerontocracy",
+        "specialization": "Oldest Member of the Wealthiest Family",
+        "magnitude": "free",
+        "kind": "free",
+        "count": 1,
+        "optionId": null
+      },
+      {
+        "name": "Edifices",
+        "lookupName": "Edifices",
+        "magnitude": null,
+        "kind": "boon",
+        "count": 2,
+        "optionId": "fortifications--edifices--minor-boon"
+      },
+      {
+        "name": "Loyal Covenfolk",
+        "lookupName": "Loyal Covenfolk",
+        "magnitude": "minor",
+        "kind": "boon",
+        "count": 1,
+        "optionId": "residents--loyal-covenfolk--minor-boon"
+      },
+      {
+        "name": "Strong community",
+        "lookupName": "Strong community",
+        "magnitude": "minor",
+        "kind": "boon",
+        "count": 1,
+        "optionId": "residents--strong-community--minor-boon"
+      },
+      {
+        "name": "Regio",
+        "lookupName": "Regio",
+        "magnitude": "major",
+        "kind": "boon",
+        "count": 1,
+        "optionId": "site--regio--major-boon"
+      },
+      {
+        "name": "Vast Aura",
+        "lookupName": "Vast Aura",
+        "magnitude": "minor",
+        "kind": "boon",
+        "count": 1,
+        "optionId": "site--vast-aura--minor-boon"
+      }
+    ],
+    "boonPoints": 8,
+    "hookPoints": 8
+  },
+  {
+    "id": "spring-in-the-woods",
+    "name": "Spring in the Woods",
+    "description": "This young covenant has been founded deep in the woods to escape the attention of the Church, nobility, and senior covenants of the Tribunal. It has managed to develop good relations with the Court of the Bees, but has, at the same time, aroused the ire of the minor faerie that used to raid the beehives. This faerie has found a way past the Aegis and now lives in the covenant, causing minor trouble.",
+    "entries": [
+      {
+        "name": "Faerie Aura",
+        "lookupName": "Faerie Aura",
+        "magnitude": "minor",
+        "kind": "hook",
+        "count": 1,
+        "optionId": "site--faerie-aura--minor-hook"
+      },
+      {
+        "name": "Faerie Court",
+        "lookupName": "Faerie Court",
+        "magnitude": "minor",
+        "kind": "hook",
+        "count": 1,
+        "optionId": "surroundings--faerie-court--minor-hook"
+      },
+      {
+        "name": "Resident Nuisance",
+        "lookupName": "Resident Nuisance",
+        "magnitude": "minor",
+        "kind": "hook",
+        "count": 1,
+        "optionId": "site--resident-nuisance--minor-hook"
+      },
+      {
+        "name": "Small Tower: Wooden",
+        "lookupName": "Small Tower",
+        "specialization": "Wooden",
+        "magnitude": "minor",
+        "kind": "hook",
+        "count": 1,
+        "optionId": null
+      },
+      {
+        "name": "Gerontocracy",
+        "lookupName": "Gerontocracy",
+        "magnitude": "free",
+        "kind": "free",
+        "count": 1,
+        "optionId": null
+      },
+      {
+        "name": "Hidden Ways",
+        "lookupName": "Hidden Ways",
+        "magnitude": "minor",
+        "kind": "boon",
+        "count": 1,
+        "optionId": "surroundings--hidden-ways--minor-boon"
+      },
+      {
+        "name": "Local Ally",
+        "lookupName": "Local Ally",
+        "magnitude": "minor",
+        "kind": "boon",
+        "count": 1,
+        "optionId": "external-relations--local-ally--minor-boon"
+      },
+      {
+        "name": "Unnatural Law",
+        "lookupName": "Unnatural Law",
+        "magnitude": "minor",
+        "kind": "boon",
+        "count": 1,
+        "optionId": "site--unnatural-law--minor-boon"
+      },
+      {
+        "name": "Useful Curse",
+        "lookupName": "Useful Curse",
+        "magnitude": "minor",
+        "kind": "boon",
+        "count": 1,
+        "optionId": "residents--useful-curse--minor-boon"
+      }
+    ],
+    "boonPoints": 4,
+    "hookPoints": 4
+  },
+  {
+    "id": "struggling",
+    "name": "Struggling",
+    "description": "The covenant has few resources, and some enemies, and has to work hard just to survive. Stories are likely to concern very mundane issues, such as food supplies, at least until the poverty crisis is resolved.",
+    "entries": [
+      {
+        "name": "Poverty",
+        "lookupName": "Poverty",
+        "magnitude": "major",
+        "kind": "hook",
+        "count": 1,
+        "optionId": "resources--poverty--major-hook"
+      },
+      {
+        "name": "Contested Resource",
+        "lookupName": "Contested Resource",
+        "magnitude": "minor",
+        "kind": "hook",
+        "count": 1,
+        "optionId": "resources--contested-resource--minor-hook"
+      },
+      {
+        "name": "Aura",
+        "lookupName": "Aura",
+        "magnitude": "minor",
+        "kind": "boon",
+        "count": 2,
+        "optionId": "site--aura--minor-boon"
+      },
+      {
+        "name": "Regio",
+        "lookupName": "Regio",
+        "magnitude": "minor",
+        "kind": "boon",
+        "count": 1,
+        "optionId": "site--regio--minor-boon"
+      },
+      {
+        "name": "Seclusion",
+        "lookupName": "Seclusion",
+        "magnitude": "minor",
+        "kind": "boon",
+        "count": 1,
+        "optionId": "site--seclusion--minor-boon"
+      }
+    ],
+    "boonPoints": 4,
+    "hookPoints": 4
+  },
+  {
+    "id": "summertime-and-the-living-is-easy-relatively-speaking",
+    "name": "Summertime (and the living is easy, relatively speaking)",
+    "description": "This is a classic Summer covenant. Set amidst cropland and supported by serfs, it has a castle it can't quite explain and a few faeries it has annoyed, but no major problems, when the saga begins.",
+    "entries": [
+      {
+        "name": "Castle",
+        "lookupName": "Castle",
+        "magnitude": "major",
+        "kind": "hook",
+        "count": 1,
+        "optionId": "fortifications--castle--major-hook"
+      },
+      {
+        "name": "Faerie Court",
+        "lookupName": "Faerie Court",
+        "magnitude": "minor",
+        "kind": "hook",
+        "count": 1,
+        "optionId": "surroundings--faerie-court--minor-hook"
+      },
+      {
+        "name": "Faux Feudalism",
+        "lookupName": "Faux Feudalism",
+        "magnitude": "free",
+        "kind": "free",
+        "count": 1,
+        "optionId": null
+      },
+      {
+        "name": "Curtain Walls and Mural Towers: Octagonal Keep",
+        "lookupName": "Curtain Walls and Mural Towers",
+        "specialization": "Octagonal Keep",
+        "magnitude": "major",
+        "kind": "boon",
+        "count": 1,
+        "optionId": "fortifications--curtain-walls-and-mural-towers--major-boon"
+      },
+      {
+        "name": "Informants",
+        "lookupName": "Informants",
+        "magnitude": "minor",
+        "kind": "boon",
+        "count": 1,
+        "optionId": "external-relations--informants--minor-boon"
+      }
+    ],
+    "boonPoints": 4,
+    "hookPoints": 4
+  },
+  {
+    "id": "swashbuckling",
+    "name": "Swashbuckling",
+    "description": "This covenant is based on a ship that seeks adventure — or at least distraction and riches — for the magi who own it.\n\nThe Half Shell (Minor), Hidden Ways: Sea Routes Only Traversable by Magic (Major), Strong Community: Crew and Wives Ashore (Minor), Wealthy: Trade and Piracy (Minor)",
+    "entries": [
+      {
+        "name": "Constantly Mobile",
+        "lookupName": "Constantly Mobile",
+        "magnitude": "major",
+        "kind": "hook",
+        "count": 1,
+        "optionId": "site--constantly-mobile--major-hook"
+      },
+      {
+        "name": "Hangout: Smugglers' Port",
+        "lookupName": "Hangout",
+        "specialization": "Smugglers' Port",
+        "magnitude": "minor",
+        "kind": "hook",
+        "count": 1,
+        "optionId": "external-relations--hangout--minor-hook"
+      },
+      {
+        "name": "Missing Aura",
+        "lookupName": "Missing Aura",
+        "magnitude": "major",
+        "kind": "hook",
+        "count": 1,
+        "optionId": "site--missing-aura--major-hook"
+      },
+      {
+        "name": "Criminals: Smugglers and Pirates",
+        "lookupName": "Criminals",
+        "specialization": "Smugglers and Pirates",
+        "magnitude": "minor",
+        "kind": "boon",
+        "count": 1,
+        "optionId": "residents--criminals--minor-boon"
+      },
+      {
+        "name": "Edifice: The Large Ship",
+        "lookupName": "Edifice",
+        "specialization": "The Large Ship",
+        "magnitude": null,
+        "kind": "boon",
+        "count": 1,
+        "optionId": "fortifications--edifices--minor-boon"
+      }
+    ],
+    "boonPoints": 2,
+    "hookPoints": 7
+  },
+  {
+    "id": "traveling-covenant",
+    "name": "Traveling Covenant",
+    "description": "This covenant does not have a stationary site. It moves on a circuit to harvest its resources, or keep its trade contacts vibrant.",
+    "entries": [
+      {
+        "name": "Constantly Mobile",
+        "lookupName": "Constantly Mobile",
+        "magnitude": "major",
+        "kind": "hook",
+        "count": 1,
+        "optionId": "site--constantly-mobile--major-hook"
+      },
+      {
+        "name": "Resident Nuisance",
+        "lookupName": "Resident Nuisance",
+        "magnitude": "minor",
+        "kind": "hook",
+        "count": 1,
+        "optionId": "site--resident-nuisance--minor-hook"
+      },
+      {
+        "name": "Rival",
+        "lookupName": "Rival",
+        "magnitude": "minor",
+        "kind": "hook",
+        "count": 3,
+        "optionId": "external-relations--rival--minor-hook"
+      },
+      {
+        "name": "Missing Aura",
+        "lookupName": "Missing Aura",
+        "magnitude": "major",
+        "kind": "hook",
+        "count": 1,
+        "optionId": "site--missing-aura--major-hook"
+      },
+      {
+        "name": "Informants",
+        "lookupName": "Informants",
+        "magnitude": "minor",
+        "kind": "boon",
+        "count": 1,
+        "optionId": "external-relations--informants--minor-boon"
+      },
+      {
+        "name": "Local Ally",
+        "lookupName": "Local Ally",
+        "magnitude": "minor",
+        "kind": "boon",
+        "count": 6,
+        "optionId": "external-relations--local-ally--minor-boon"
+      },
+      {
+        "name": "Wealth: Trade Fleet",
+        "lookupName": "Wealth",
+        "specialization": "Trade Fleet",
+        "magnitude": "minor",
+        "kind": "boon",
+        "count": 1,
+        "optionId": "resources--wealth--minor-boon"
+      }
+    ],
+    "boonPoints": 8,
+    "hookPoints": 10
+  },
+  {
+    "id": "urban",
+    "name": "Urban",
+    "description": "The covenant is hidden in a regio in a city. While this makes reaching a market easy, it brings its own problems.",
+    "entries": [
+      {
+        "name": "Flickering Aura",
+        "lookupName": "Flickering Aura",
+        "magnitude": "minor",
+        "kind": "hook",
+        "count": 1,
+        "optionId": "site--flickering-aura--minor-hook"
+      },
+      {
+        "name": "Rival",
+        "lookupName": "Rival",
+        "magnitude": "minor",
+        "kind": "hook",
+        "count": 1,
+        "optionId": "external-relations--rival--minor-hook"
+      },
+      {
+        "name": "Refugee",
+        "lookupName": "Refugee",
+        "magnitude": "minor",
+        "kind": "hook",
+        "count": 1,
+        "optionId": "residents--refugee--minor-hook"
+      },
+      {
+        "name": "Urban",
+        "lookupName": "Urban",
+        "magnitude": "major",
+        "kind": "hook",
+        "count": 1,
+        "optionId": "site--urban--major-hook"
+      },
+      {
+        "name": "Democracy",
+        "lookupName": "Democracy",
+        "magnitude": "free",
+        "kind": "free",
+        "count": 1,
+        "optionId": null
+      },
+      {
+        "name": "Edifice: Palatial House",
+        "lookupName": "Edifice",
+        "specialization": "Palatial House",
+        "magnitude": "minor",
+        "kind": "boon",
+        "count": 1,
+        "optionId": "fortifications--edifices--minor-boon"
+      },
+      {
+        "name": "Regio",
+        "lookupName": "Regio",
+        "magnitude": "major",
+        "kind": "boon",
+        "count": 1,
+        "optionId": "site--regio--major-boon"
+      },
+      {
+        "name": "Unnatural Law",
+        "lookupName": "Unnatural Law",
+        "magnitude": "minor",
+        "kind": "boon",
+        "count": 1,
+        "optionId": "site--unnatural-law--minor-boon"
+      },
+      {
+        "name": "Wealthy: Stationers",
+        "lookupName": "Wealthy",
+        "specialization": "Stationers",
+        "magnitude": "minor",
+        "kind": "boon",
+        "count": 1,
+        "optionId": "resources--wealth--minor-boon"
+      }
+    ],
+    "boonPoints": 6,
+    "hookPoints": 6
+  },
+  {
+    "id": "winter-ruins",
+    "name": "Winter Ruins",
+    "description": "The covenant is a fallen one and its magi have been assigned by their parentes, or the Tribunal, to rebuild it. They are the only magi present, but some of the servants of the previous magi remain, as does a powerful creature, either a deranged familiar or the beast that slew their final — admittedly Twilight-ridden and possibly demented — predecessor.\n\nIf, alternately, a magus has survived to welcome these new magi, the group should choose Superiors, or perhaps Famous Inhabitant, depending on the remaining magus's personality.",
+    "entries": [
+      {
+        "name": "Contested Resource",
+        "lookupName": "Contested Resource",
+        "magnitude": "minor",
+        "kind": "hook",
+        "count": 3,
+        "optionId": "resources--contested-resource--minor-hook"
+      },
+      {
+        "name": "Monster",
+        "lookupName": "Monster",
+        "magnitude": "major",
+        "kind": "hook",
+        "count": 1,
+        "optionId": null
+      },
+      {
+        "name": "Poverty",
+        "lookupName": "Poverty",
+        "magnitude": "minor",
+        "kind": "hook",
+        "count": 1,
+        "optionId": "resources--poverty--minor-hook"
+      },
+      {
+        "name": "Gerontocracy",
+        "lookupName": "Gerontocracy",
+        "magnitude": "free",
+        "kind": "free",
+        "count": 1,
+        "optionId": null
+      },
+      {
+        "name": "Aura",
+        "lookupName": "Aura",
+        "magnitude": "minor",
+        "kind": "boon",
+        "count": 2,
+        "optionId": "site--aura--minor-boon"
+      },
+      {
+        "name": "Edifice",
+        "lookupName": "Edifice",
+        "magnitude": "minor",
+        "kind": "boon",
+        "count": 2,
+        "optionId": "fortifications--edifices--minor-boon"
+      },
+      {
+        "name": "Hidden Resources",
+        "lookupName": "Hidden Resources",
+        "magnitude": "minor",
+        "kind": "boon",
+        "count": 3,
+        "optionId": "resources--hidden-resources--minor-boon"
+      }
+    ],
+    "boonPoints": 7,
+    "hookPoints": 7
+  },
+  {
+    "id": "worshipful",
+    "name": "Worshipful",
+    "description": "This covenant has been built in a regio where the inhabitants worship a family of pagan gods, who are powerful faeries. The family has fallen out with each other, and the magi have taken the side of the Blackberry God, a harvest deity. A magus is responsible for the rift, and thus it falls to the magi to resolve it. The Queen of Snowflakes, the former lover of the Blackberry God, controls the land above the tree-line, and some the covenant's vis sources lie in this area; she does not make collection easy. Summer is now a ghostly infant, unable to be born until his parents reconcile, and thus prone to interfering in covenant affairs to bring that about.\n\nThe state of the conflict results in the season being fixed at harvest. While this means that the peasants are always busy, it also means that the covenant has a massive agricultural surplus. At present, this is used to provide the Blackberry God with vast amounts of beer.",
+    "entries": [
+      {
+        "name": "Ancestral Error: A magus caused the rift",
+        "lookupName": "Ancestral Error",
+        "specialization": "A magus caused the rift",
+        "magnitude": "minor",
+        "kind": "hook",
+        "count": 1,
+        "optionId": "external-relations--ancestral-error--minor-hook"
+      },
+      {
+        "name": "Contested resource",
+        "lookupName": "Contested resource",
+        "magnitude": "minor",
+        "kind": "hook",
+        "count": 2,
+        "optionId": "resources--contested-resource--minor-hook"
+      },
+      {
+        "name": "Faerie Aura",
+        "lookupName": "Faerie Aura",
+        "magnitude": null,
+        "kind": "hook",
+        "count": 1,
+        "optionId": "site--faerie-aura--minor-hook"
+      },
+      {
+        "name": "Faerie landlord",
+        "lookupName": "Faerie landlord",
+        "magnitude": null,
+        "kind": "hook",
+        "count": 1,
+        "optionId": "surroundings--faerie-landlord--major-hook"
+      },
+      {
+        "name": "Pagans (Major) Rival: Queen of Snowflakes",
+        "lookupName": "Pagans (Major) Rival",
+        "specialization": "Queen of Snowflakes",
+        "magnitude": "major",
+        "kind": "hook",
+        "count": 1,
+        "optionId": null
+      },
+      {
+        "name": "Rival: Summer",
+        "lookupName": "Rival",
+        "specialization": "Summer",
+        "magnitude": "minor",
+        "kind": "hook",
+        "count": 1,
+        "optionId": "external-relations--rival--minor-hook"
+      },
+      {
+        "name": "Theocratic: the magi",
+        "lookupName": "Theocratic",
+        "specialization": "the magi",
+        "magnitude": "free",
+        "kind": "free",
+        "count": 1,
+        "optionId": null
+      },
+      {
+        "name": "who act as priests for the god",
+        "lookupName": "who act as priests for the god",
+        "magnitude": "free",
+        "kind": "free",
+        "count": 1,
+        "optionId": null
+      },
+      {
+        "name": "rule through lesser priests",
+        "lookupName": "rule through lesser priests",
+        "magnitude": "free",
+        "kind": "free",
+        "count": 1,
+        "optionId": null
+      },
+      {
+        "name": "Peasants",
+        "lookupName": "Peasants",
+        "magnitude": "free",
+        "kind": "free",
+        "count": 1,
+        "optionId": "residents--peasants--free-free"
+      },
+      {
+        "name": "Edifices x2: Great Hall of the Magi, Temple of the Blackberry God",
+        "lookupName": "Edifices x2",
+        "specialization": "Great Hall of the Magi, Temple of the Blackberry God",
+        "magnitude": "minor",
+        "kind": "boon",
+        "count": 1,
+        "optionId": null
+      },
+      {
+        "name": "Local Ally: Summer",
+        "lookupName": "Local Ally",
+        "specialization": "Summer",
+        "magnitude": "minor",
+        "kind": "boon",
+        "count": 1,
+        "optionId": "external-relations--local-ally--minor-boon"
+      },
+      {
+        "name": "Powerful Ally",
+        "lookupName": "Powerful Ally",
+        "magnitude": "major",
+        "kind": "boon",
+        "count": 1,
+        "optionId": "external-relations--powerful-ally--major-boon"
+      },
+      {
+        "name": "Regio",
+        "lookupName": "Regio",
+        "magnitude": "major",
+        "kind": "boon",
+        "count": 1,
+        "optionId": "site--regio--major-boon"
+      },
+      {
+        "name": "Strong Community",
+        "lookupName": "Strong Community",
+        "magnitude": "minor",
+        "kind": "boon",
+        "count": 1,
+        "optionId": "residents--strong-community--minor-boon"
+      },
+      {
+        "name": "Unnatural law: forever harvest (Minor) Vast Aura",
+        "lookupName": "Unnatural law",
+        "specialization": "forever harvest (Minor) Vast Aura",
+        "magnitude": "minor",
+        "kind": "boon",
+        "count": 1,
+        "optionId": "site--unnatural-law--minor-boon"
+      },
+      {
+        "name": "Vivid Environment",
+        "lookupName": "Vivid Environment",
+        "magnitude": "minor",
+        "kind": "boon",
+        "count": 1,
+        "optionId": "site--vivid-environment--minor-boon"
+      }
+    ],
+    "boonPoints": 11,
+    "hookPoints": 9
+  }
+]

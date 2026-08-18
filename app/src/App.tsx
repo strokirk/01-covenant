@@ -4,6 +4,7 @@ import { BalanceBar } from './components/BalanceBar.tsx'
 import { CovenantActions } from './components/CovenantActions.tsx'
 import { OptionCard } from './components/OptionCard.tsx'
 import { SelectionSummary } from './components/SelectionSummary.tsx'
+import { SituationPicker } from './components/SituationPicker.tsx'
 import { categories, compareOptions, options } from './data.ts'
 import { covenant, setCovenant } from './store.ts'
 import type { CategoryId, Kind } from './types.ts'
@@ -59,6 +60,7 @@ function App() {
       </header>
 
       <BalanceBar />
+      <SituationPicker />
 
       <div class="layout">
         <main class="picker">

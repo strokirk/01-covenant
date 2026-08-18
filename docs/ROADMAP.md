@@ -22,11 +22,22 @@ Name the covenant, export/import it as JSON, and share it by link. The
 covenant is encoded into the URL hash, so a shared link reconstructs it
 with no server involved; a link takes priority over locally saved work.
 
-## Stage 3 — Covenant Situations as presets
+## Stage 3 — Covenant Situations as presets ✅
 
-*Covenants* ch. 2 ends with ~18 ready-made covenant situations, each a
-themed bundle of Boons and Hooks. Offer them as one-click starting points
+The 18 ready-made covenant situations at the end of *Covenants* ch. 2, each
+a themed package of Boons and Hooks, offered as one-click starting points
 that populate the Stage 1 picker.
+
+Two honesty notes surfaced in the UI rather than papered over:
+
+- 128 of 149 package entries resolve to an option automatically. The rest
+  are shorthand the lists spell differently, names ambiguous between two
+  categories, or forms of governance that live in ch. 3 — these are listed
+  for the reader to add by hand instead of being guessed at, since a wrong
+  guess would silently corrupt the point balance.
+- Four packages (Autumn Power, Swashbuckling, Traveling Covenant,
+  Worshipful) do not tally as printed in the book. The picker shows the
+  discrepancy rather than hiding it.
 
 ## Stage 4 — Wealth: income & expenditure
 

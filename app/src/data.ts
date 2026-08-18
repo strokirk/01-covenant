@@ -1,11 +1,14 @@
 import raw from './data/boons-hooks.json'
-import type { BoonHook, CategoryId } from './types.ts'
+import rawSituations from './data/situations.json'
+import type { BoonHook, CategoryId, Situation } from './types.ts'
 
 /**
  * The JSON is generated, so its inferred type widens `magnitude` and friends
  * to `string`. The generator guarantees the narrower shape.
  */
 export const options = raw as unknown as BoonHook[]
+
+export const situations = rawSituations as unknown as Situation[]
 
 export const optionsById = new Map(options.map((option) => [option.id, option]))
 

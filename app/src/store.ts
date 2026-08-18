@@ -2,7 +2,7 @@ import { createEffect, createMemo, createSignal } from 'solid-js'
 import { createStore, produce } from 'solid-js/store'
 import { compareOptions, optionsById } from './data.ts'
 import { covenantFromHash, sanitize } from './share.ts'
-import type { Covenant } from './types.ts'
+import type { Covenant, Situation } from './types.ts'
 
 const STORAGE_KEY = 'covenant-builder:covenant:v1'
 
@@ -55,6 +55,25 @@ export function toggle(id: string): void {
 
 export function clearSelections(): void {
   setCovenant(produce((draft) => void (draft.selections = {})))
+}
+
+/**
+ * Loads a Covenant Situation's package, replacing the current selections.
+ * Only entries the extractor could resolve are applied; the rest are listed
+ * in the UI for the reader to place by hand.
+ */
+export function applySituation(situation: Situation): void {
+  const selections: Record<string, number> = {}
+  for (const entry of situation.entries) {
+    if (!entry.optionId) continue
+    const option = optionsById.get(entry.optionId)
+    if (!option) continue
+    selections[entry.optionId] = Math.min(
+      (selections[entry.optionId] ?? 0) + entry.count,
+      option.maxTimes,
+    )
+  }
+  setCovenant(produce((draft) => void (draft.selections = selections)))
 }
 
 /** Replaces the whole covenant, e.g. from an imported file. */
