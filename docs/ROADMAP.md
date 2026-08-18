@@ -55,35 +55,6 @@ inhabitants.
 Still to do here: cost saving from craftsmen, which is per-craft with a
 limit per expenditure category. Laborers are done.
 
-## Stage 5 — Library
-
-*Covenants* ch. 7. Books as summae/tractatus with Level and Quality, shelf
-listing, totals.
-
-## Stage 6 — Vis sources
-
-*Covenants* ch. 6. Pick or define sources by Art and annual yield.
-
-## Stage 7 — Laboratories & sanctum
-
-*Covenants* ch. 9 (large: size, refinement, safety, warping, plus lab
-virtues/flaws) and ch. 8.
-
-## Stage 8 — Governance & charter
-
-*Covenants* ch. 3. Charter builder from the book's play-aid template.
-
-## Stage 9 — Output
-
-Printable / exportable covenant sheet pulling every stage together.
-
-## Cross-cutting
-
-- Attribution: any rules text shown in the app must carry the CC-BY-SA
-  attribution to Atlas Games (see `reference/README.md`).
-- Rule data is extracted from the source books by scripts in `scripts/`
-  rather than hand-typed, so it stays auditable.
-
 ## Stage 5 — Buildings & expansion ✅
 
 *Covenants* ch. 5, Sundry Expenses → Property, plus the Price List. One-off
@@ -101,3 +72,32 @@ costs, kept separate from the yearly upkeep of Stage 4:
 
 Not yet covered from this material: hired labor rates, the animals /
 travel / precious materials price lists, and the Pound of Enumerus.
+
+## Stage 6 — Library
+
+*Covenants* ch. 7. Books as summae/tractatus with Level and Quality, shelf
+listing, totals.
+
+## Stage 7 — Vis sources
+
+*Covenants* ch. 6. Pick or define sources by Art and annual yield.
+
+## Stage 8 — Laboratories & sanctum
+
+*Covenants* ch. 9 (large: size, refinement, safety, warping, plus lab
+virtues/flaws) and ch. 8.
+
+## Stage 9 — Governance & charter
+
+*Covenants* ch. 3. Charter builder from the book's play-aid template.
+
+## Stage 10 — Output
+
+Printable / exportable covenant sheet pulling every stage together.
+
+## Cross-cutting
+
+- Attribution: any rules text shown in the app must carry the CC-BY-SA
+  attribution to Atlas Games (see `reference/README.md`).
+- Rule data is extracted from the source books by scripts in `scripts/`
+  rather than hand-typed, so it stays auditable.
